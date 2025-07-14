@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Farren Tanudjaja | Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src = "script.js" defer> </script>
+</head>
+<body style="background-color: darkgray">
+    <!-- Navigation -->
+    <div id="toggle"></div>
+    <div id="sidebar">
+        <ul>
+            <li class="small-heading">Portfolio: Farren Tanudjaja</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+    </div>
+
+    <!-- Home -->
+    <section id="home">
+        <div class ="heading"><h2>Welcome to My Project Portfolio</h2></div>
+        <img src="photo.JPG" alt="photo" width="173" height="260" style="vertical-align:middle;margin:0px 850px">
+        <div class ="heading"><h3>This is my project portfolio and under is my Resume and a little About Me.</h3></div>
+        <p>
+            
+        </p>
+        <div class="container">
+            <div class="vertical-center">
+                <a href="https://drive.google.com/file/d/1kBeMBTFiusdTJA0n4Qzcnm73N0w_un29/view?usp=sharing" download="Resume.pdf" class="resume-btn">Resume </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me -->
+     <section id="about">
+        <div class="font-size">
+            <br><br><br><br><br><br>
+        <h3>About Me</h3>
+    </div>
+    <div>
+            <p>
+            I'm Farren Tanudjaja You can call me Farren, I am currently enrolled in Computer Science major, this is my third year, 
+            and going to graduate next year. My hobbies are playing games and cooking. I currently play Black Desert Online and Dota2.
+            </p>
+            <p>
+            I also like cooking different types of food, I made burger, steak, and spaghetti. But, my favorite food that I like to cook
+            now is Indonesian Food. I also used to grow up in Indonesia and move to America when I was 17 years old, and have been living
+            here in the States.
+            </p>
+            <p>
+            This Project is to create a personal portfolio website that showcases my skills and projects, and also
+            have resume preview that can be checked out.    
+            </p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+     </section>
+    
+    <!-- Projects -->
+    <section id="projects" style="background-color:tan;" class="whitespc">
+        <div class="font-size">
+            <h3>Projects</h3>
+        </div>
+        <div class="font-size2">
+            <img src="project1.png" alt="Project 1 Thumbnail" width="359" height="192">
+            <h4>Cloud Migration Project</h4>
+            <p>Technology that were used Microsoft Azure, and Linux Virtual Machine</p>
+            <p>Merging multiple virtual machines into one, checking the safety of the virtual machines to make sure that when
+            it is deploy, it is safe from cyber attack, and deploying it into cloud services. </p>
+        </div>
+        <div>
+            <img src="project2.png" alt="Project 2 Thumbnail" width="359" height="192">
+            <div class="p-6">
+                <h4 class="font-size2">Big Data Project</h4>
+                <p>Technology that were used Google Colab. Programming language that was used Python with Pandas, KNN, and scikit-learn library.</p>
+                <p>A big data project where the task is too tidy, merge, and evaluate the data using Linear Models and predict the outcome of the data.</p>
+                <a href="https://docs.google.com/document/d/1vMzjp8xPa92NkTtaaqVBVPuLXbVpio_zyGnanEKEWqQ/edit?tab=t.0#heading=h.40kyvdbzljka">Learn More &rarr;</a>
+        </div> 
+    </section>
+    
+    <!-- Skills -->
+    <section id="skills">
+        <div class="font-size">
+            <br><br><br><br><br><br><br>
+            <h3>Skills</h3>
+        </div>
+        <div>
+            <ul>
+                <h4>Techinical Skills: </h4>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <h4>Non-technical Skills: </h4>
+                <li>Communication</li>
+                <li>Teamwork</li>
+                <li>Decision-making</li>
+                <li>Adaptibility</li>
+            </ul>
+            <br><br><br><br><br><br><br><br><br>
+        </div>
+        <div class="font-size">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <h3>Contacts Page</h3>
+        </div>
+    </section>
+
+    <!-- Contacts Page -->
+    <section id="contact">
+        <div>
+        <p>Contact: ftanudjaja@csu.fullerton.edu</p>
+        <a href="https://www.instagram.com/farren_elvin/">Instagram</a>
+        <a href="https://github.com/farrenelvin">GitHub</a>
+        </div>
+    </section>
+
+    <script>
+        const toggle = document.getElementById('toggle');
+        const sidebar = document.getElementById('sidebar');    
+
+        document.onclick = function(e){
+            if(e.target.id !== 'sidebar' && e.target.id !== 'toggle')
+            {
+                toggle.classList.remove('active');
+                sidebar.classList.remove('active')
+            }
+        }
+            toggle.onclick = function(){
+                toggle.classList.toggle('active');
+                sidebar.classList.toggle('active')
+            }
+        
+    </script>
+</body>
+</html>

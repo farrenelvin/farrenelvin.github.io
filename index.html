@@ -1,141 +1,242 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Farren Tanudjaja | Personal Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farren Tanudjaja | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src = "script.js" defer> </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body style="background-color: darkgray">
-    <!-- Navigation -->
-    <div id="toggle"></div>
-    <div id="sidebar">
-        <ul>
-            <li class="small-heading">Portfolio: Farren Tanudjaja</li>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        
-    </div>
+<body>
 
-    <!-- Home -->
-    <section id="home">
-        <div class ="heading"><h2>Welcome to My Project Portfolio</h2></div>
-        <img src="photo.JPG" alt="photo" width="173" height="260" style="vertical-align:middle;margin:0px 850px">
-        <div class ="heading"><h3>This is my project portfolio and under is my Resume and a little About Me.</h3></div>
+<!-- ==================== NAV ==================== -->
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="#home" class="logo">Farren Tanudjaja</a>
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<!-- ==================== HERO ==================== -->
+<section id="home" class="hero">
+    <div class="container hero-inner">
+        <div class="hero-text">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Computer Science student interested in Quality Assurance, software testing, coding, and IT support.</p>
+            <a href="https://drive.google.com/file/d/1LlTi6CLOxFUTeV26k79q-NpaIuISGhiV/view?usp=sharing"
+               target="_blank" class="btn-primary">Download Resume</a>
+        </div>
+        <img src="photo.JPG" alt="Farren Tanudjaja" class="hero-img">
+    </div>
+</section>
+
+<!-- ==================== ABOUT ==================== -->
+<section id="about" class="section">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
         <p>
-            
+            I'm Farren Tanudjaja, a Computer Science fresh undergraduate student.
+            I enjoy playing <em>Black Desert Online</em> and <em>Dota 2</em>, and I love cooking
+            (mostly Indonesian dishes, but in the past I have many dishes cooked, from burgers to steak, etc.). I moved to the United States
+            when I was 17 years old and have lived here since.
         </p>
-        <div class="container">
-            <div class="vertical-center">
-                <a href="https://drive.google.com/file/d/1kBeMBTFiusdTJA0n4Qzcnm73N0w_un29/view?usp=sharing" download="Resume.pdf" class="resume-btn">Resume </a>
+        <p>
+            <br>This portfolio showcases my technical projects, skills, and a downloadable resume.
+        </p>
+    </div>
+</section>
+
+<!-- ==================== Opening PROJECTS Section ==================== -->
+<section id="projects" class="section bg-light">
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project-grid">
+
+            <article class="project-card recent">
+                <div class="project-media">
+                    <div class="img-zoom-wrap">
+                        <img src="robotdog1.png" alt="Autonomous robot dog project image 1">
+                        <button type="button" class="img-zoom-btn" aria-label="Enlarge image: Autonomous robot dog project image 1">+</button>
+                    </div>
+                    <div class="img-zoom-wrap">
+                        <img src="robotdog2.png" alt="Autonomous robot dog project image 2">
+                        <button type="button" class="img-zoom-btn" aria-label="Enlarge image: Autonomous robot dog project image 2">+</button>
+                    </div>
+                    <div class="img-zoom-wrap">
+                        <img src="robotdog3.png" alt="Autonomous robot dog project image 3">
+                        <button type="button" class="img-zoom-btn" aria-label="Enlarge image: Autonomous robot dog project image 3">+</button>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3>Month2Month Autonomous Robot Dog</h3>
+                    <p class="tech">Robotics | Testing | Team Project</p>
+                    <p>Built, enhanced, and optimized the autonomous robot dog navigation framework and performance through indoor full-house navigation
+                        using SLAM, ROS2, and Python to improve robot's waypoint generation, path tracking, efficiency, and stability.</p>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="img-zoom-wrap">
+                    <img src="project1.png" alt="Cloud Migration">
+                    <button type="button" class="img-zoom-btn" aria-label="Enlarge image: Cloud Migration">+</button>
+                </div>
+                <div class="project-body">
+                    <h3>Cloud Migration Project</h3>
+                    <p class="tech">Microsoft Azure | Linux VM</p>
+                    <p>Merged multiple VMs into one, enhanced the VMs security, and deployed the finished product to Azure cloud services.</p>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="img-zoom-wrap">
+                    <img src="project2.png" alt="Big Data Project">
+                    <button type="button" class="img-zoom-btn" aria-label="Enlarge image: Big Data Project">+</button>
+                </div>
+                <div class="project-body">
+                    <h3>Big Data Project</h3>
+                    <p class="tech">Python | Pandas | scikit-learn | Google Colab</p>
+                    <p>Sort, Tidied, and merged datasets, built different types of models such as linear & KNN models using Pandas, and scikit-learn,
+                         and predicted daily COVID deaths using Google Colab as the.</p>
+                    <a href="https://docs.google.com/document/d/1vMzjp8xPa92NkTtaaqVBVPuLXbVpio_zyGnanEKEWqQ/edit"
+                       target="_blank" class="link">Learn More</a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+<!-- ==================== Closing PROJECTS Section ==================== -->
+
+<!-- ==================== SKILLS ==================== -->
+<section id="skills" class="section">
+    <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div>
+                <h4>Technical</h4>
+                <ul class="skill-list">
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>SQL</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Soft Skills</h4>
+                <ul class="skill-list">
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                    <li>Decision-making</li>
+                    <li>Adaptability</li>
+                </ul>
             </div>
         </div>
-    </section>
-
-    <!-- About Me -->
-     <section id="about">
-        <div class="font-size">
-            <br><br><br><br><br><br>
-        <h3>About Me</h3>
     </div>
-    <div>
-            <p>
-            I'm Farren Tanudjaja You can call me Farren, I am currently enrolled in Computer Science major, this is my third year, 
-            and going to graduate next year. My hobbies are playing games and cooking. I currently play Black Desert Online and Dota2.
-            </p>
-            <p>
-            I also like cooking different types of food, I made burger, steak, and spaghetti. But, my favorite food that I like to cook
-            now is Indonesian Food. I also used to grow up in Indonesia and move to America when I was 17 years old, and have been living
-            here in the States.
-            </p>
-            <p>
-            This Project is to create a personal portfolio website that showcases my skills and projects, and also
-            have resume preview that can be checked out.    
-            </p>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</section>
+
+<!-- ==================== CONTACT ==================== -->
+<section id="contact" class="section bg-light">
+    <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p>Email: <a href="mailto:ftanudjaja@csu.fullerton.edu">ftanudjaja@csu.fullerton.edu</a></p>
+        <p>
+            <a href="https://www.instagram.com/farren_elvin/" target="_blank" class="social">Instagram</a>
+             |
+            <a href="https://github.com/ftanudjaja" target="_blank" class="social">GitHub</a>
+        </p>
     </div>
-     </section>
-    
-    <!-- Projects -->
-    <section id="projects" style="background-color:tan;" class="whitespc">
-        <div class="font-size">
-            <h3>Projects</h3>
-        </div>
-        <div class="font-size2">
-            <img src="project1.png" alt="Project 1 Thumbnail" width="359" height="192">
-            <h4>Cloud Migration Project</h4>
-            <p>Technology that were used Microsoft Azure, and Linux Virtual Machine</p>
-            <p>Merging multiple virtual machines into one, checking the safety of the virtual machines to make sure that when
-            it is deploy, it is safe from cyber attack, and deploying it into cloud services. </p>
-        </div>
-        <div>
-            <img src="project2.png" alt="Project 2 Thumbnail" width="359" height="192">
-            <div class="p-6">
-                <h4 class="font-size2">Big Data Project</h4>
-                <p>Technology that were used Google Colab. Programming language that was used Python with Pandas, KNN, and scikit-learn library.</p>
-                <p>A big data project where the task is too tidy, merge, and evaluate the data using Linear Models and predict the outcome of the data.</p>
-                <a href="https://docs.google.com/document/d/1vMzjp8xPa92NkTtaaqVBVPuLXbVpio_zyGnanEKEWqQ/edit?tab=t.0#heading=h.40kyvdbzljka">Learn More &rarr;</a>
-        </div> 
-    </section>
-    
-    <!-- Skills -->
-    <section id="skills">
-        <div class="font-size">
-            <br><br><br><br><br><br><br>
-            <h3>Skills</h3>
-        </div>
-        <div>
-            <ul>
-                <h4>Techinical Skills: </h4>
-                <li>Python</li>
-                <li>Java</li>
-                <li>C++</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <h4>Non-technical Skills: </h4>
-                <li>Communication</li>
-                <li>Teamwork</li>
-                <li>Decision-making</li>
-                <li>Adaptibility</li>
-            </ul>
-            <br><br><br><br><br><br><br><br><br>
-        </div>
-        <div class="font-size">
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <h3>Contacts Page</h3>
-        </div>
-    </section>
+</section>
 
-    <!-- Contacts Page -->
-    <section id="contact">
-        <div>
-        <p>Contact: ftanudjaja@csu.fullerton.edu</p>
-        <a href="https://www.instagram.com/farren_elvin/">Instagram</a>
-        <a href="https://github.com/farrenelvin">GitHub</a>
-        </div>
-    </section>
+<div class="image-modal" id="imageModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Expanded project image">
+    <button class="image-modal-close" id="imageModalClose" aria-label="Close image preview">X</button>
+    <img id="imageModalImg" alt="">
+</div>
 
-    <script>
-        const toggle = document.getElementById('toggle');
-        const sidebar = document.getElementById('sidebar');    
+<script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav ul');
 
-        document.onclick = function(e){
-            if(e.target.id !== 'sidebar' && e.target.id !== 'toggle')
-            {
-                toggle.classList.remove('active');
-                sidebar.classList.remove('active')
-            }
+    toggle.addEventListener('click', () => {
+        nav.classList.toggle('open');
+        toggle.classList.toggle('open');
+    });
+
+    // Close mobile nav when clicking a link
+    document.querySelectorAll('.nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('open');
+            toggle.classList.remove('open');
+        });
+    });
+
+    // Project image enlarge modal
+    const imageModal = document.getElementById('imageModal');
+    const imageModalImg = document.getElementById('imageModalImg');
+    const imageModalClose = document.getElementById('imageModalClose');
+
+    function openImageModal(src, alt) {
+        imageModalImg.src = src;
+        imageModalImg.alt = alt || 'Expanded project image';
+        imageModal.classList.add('open');
+        imageModal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('modal-open');
+    }
+
+    function closeImageModal() {
+        imageModal.classList.remove('open');
+        imageModal.setAttribute('aria-hidden', 'true');
+        imageModalImg.src = '';
+        document.body.classList.remove('modal-open');
+    }
+
+    document.querySelectorAll('.img-zoom-btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+            const wrapper = btn.closest('.img-zoom-wrap');
+            const img = wrapper ? wrapper.querySelector('img') : null;
+            if (!img) return;
+            openImageModal(img.src, img.alt);
+        });
+    });
+
+    imageModalClose.addEventListener('click', closeImageModal);
+    imageModal.addEventListener('click', (event) => {
+        if (event.target === imageModal) {
+            closeImageModal();
         }
-            toggle.onclick = function(){
-                toggle.classList.toggle('active');
-                sidebar.classList.toggle('active')
-            }
-        
-    </script>
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && imageModal.classList.contains('open')) {
+            closeImageModal();
+        }
+    });
+</script>
+</body>
+</html>
+ }
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && imageModal.classList.contains('open')) {
+            closeImageModal();
+        }
+    });
+</script>
 </body>
 </html>
